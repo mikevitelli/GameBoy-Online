@@ -4605,6 +4605,8 @@ GameBoyCore.prototype.initBootstrap = function () {
 }
 GameBoyCore.prototype.ROMLoad = function () {
 	//Load the first two ROM banks (0x0000 - 0x7FFF) into regular gameboy memory:
+	//MIKE: ADD PRELOADED FILE
+
 	this.ROM = [];
 	this.usedBootROM = settings[1] && ((!settings[11] && this.GBCBOOTROM.length == 0x800) || (settings[11] && this.GBBOOTROM.length == 0x100));
 	var maxLength = this.ROMImage.length;
